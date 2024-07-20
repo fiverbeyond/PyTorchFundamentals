@@ -2,10 +2,6 @@
 # Tester line to make sure github works.
 
 import torch
-import numpy as np
-import pandas as pd
-
-import matplotlib.pyplot as plt
 
 def main():
     a_list = [[1,1,1],[1,1,1],[1,1,1]]
