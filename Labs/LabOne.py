@@ -3,8 +3,6 @@
 # MOST OF THE CODE HERE IS NOT MY OWN, but it was typed by me (not copied) as I worked through each line in the lab.
 
 import torch
-import numpy as np
-import pandas as pd
 
 import matplotlib.pyplot as plt
 
@@ -15,7 +13,7 @@ def plotVec(vectors):
         plt.text(*(vec["vector"] + 0.1), vec["name"])
 
     plt.ylim(-2,2)
-    plt.xlm(-2,)
+    plt.xlim(-2,)
 
 def main():
     ints_to_tensor = torch.tensor([0, 1, 2, 3, 4])
