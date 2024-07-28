@@ -5,9 +5,6 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
-from matplotlib.pyplot import imshow
-from torch.utils.data import Dataset, DataLoader
-
 directory = "./resources/data"
 csv_file ='index.csv'
 csv_path = os.path.join(directory, csv_file)
@@ -24,6 +21,7 @@ print('Class or y:', data_name.iloc[1,0])
 image_name = data_name.iloc[1,1]
 image_path = os.path.join(directory, image_name)
 
+# Image objects can be opened after putting them into their own variable.
 image = Image.open(image_path)
 plt.imshow(image, cmap = 'gray', vmin = 0, vmax = 255)
 plt.title(data_name.iloc[1,0])
